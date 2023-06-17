@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <label for="" >first value </label>
+    <input type="text" id="one">
+    <label for="" >second value</label>
+    <input type="text" id="two">
+    <button onclick= "plus()">add</button>
+
+    <h1>science mark from jhonny</h1>
+    <label for="">mark</label>
+    <input type="text" id="marks">
+    <button onclick="evaljhonny()">evaluate</button>
+
+
+
+
+   
+    <script>
+
+      function plus()
+    { 
+     var x= Number(document.getElementById ("one").value )
+     var y =  Number(document.getElementById ("two").value ) 
+    sum =x + y
+    alert(sum);
+      }
+
+      function evaljhonny()
+      {
+        var marks = Number(document.getElementById("marks").value);     
+          if(marks >= 40){
+          alert ("congrats you are pass")
+        }
+        else{
+          alert("sorry better luck next time")
+        }
+      }
+
+      
+ 
+   
+  
+    </script>
+  </body>
+</html>
